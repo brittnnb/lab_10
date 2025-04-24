@@ -1,7 +1,14 @@
 ---
-title: "lab_10"
-format: html
-editor: visual
+title: 'Lab 10: Distances and the Border ZoneL'
+author: 'Brittany Bobb'
+date: '2025-04-24'
+format: 
+    html:
+      self-contained: true
+execute:
+  echo: true
+editor: source
+subtitle: 'Ecosystem Science and Sustainability 523c'
 ---
 
 ```{r}
@@ -14,5 +21,25 @@ library(units)
 library(gghighlight)
 library(ggrepel)
 library(knitr)
+```
+
+```{r}
+#| echo: true
+library(remotes)
+remotes::install_github("ropensci/USAboundaries")
+```
+
+```{r}
+#| echo: true
+remotes::install_github("ropensci/USAboundariesData")
+```
+
+```{r}
+#| echo: true
+remotes::install_github("ropenscilabs/rnaturalearthdata")
+```
+
+```{r}
+
 ```
 
