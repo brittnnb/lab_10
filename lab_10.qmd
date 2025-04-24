@@ -1,0 +1,5 @@
+---
+title: "lab_10"
+format: html
+editor: visual
+---
