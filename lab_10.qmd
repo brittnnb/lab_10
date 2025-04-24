@@ -3,3 +3,16 @@ title: "lab_10"
 format: html
 editor: visual
 ---
+
+```{r}
+# spatial data science
+library(tidyverse)
+library(sf)
+library(units)
+
+# Visualization
+library(gghighlight)
+library(ggrepel)
+library(knitr)
+```
+
