@@ -1,5 +1,5 @@
 ---
-title: 'Lab 10: Distances and the Border ZoneL'
+title: 'Lab 10: Distances and the Border Zone'
 author: 'Brittany Bobb'
 date: '2025-04-24'
 format: 
@@ -90,11 +90,10 @@ cities_selected <- cities |>
 
 farthest_cities <- cities_selected |> 
   arrange(desc(distance_to_us_border)) 
-  #slice_head(n = 5)
-  #print(farthest_cities)
+  
 #flextable
-farthest_cities |> 
-  flextable() |> 
+farthest_cities |>
+  flextable() |>
   set_header_labels(city = "City", state_name = "State", distance_to_us_border = "Distance ") |> 
   colformat_num(j = "distance_to_us_border", digits = 2) |> 
   autofit()
