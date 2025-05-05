@@ -93,6 +93,7 @@ farthest_cities <- cities_selected |>
   
 #flextable
 farthest_cities |>
+  slice_head(n = 5)|>
   flextable() |>
   set_header_labels(city = "City", state_name = "State", distance_to_us_border = "Distance ") |> 
   colformat_num(j = "distance_to_us_border", digits = 2) |> 
